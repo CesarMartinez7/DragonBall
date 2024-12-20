@@ -1,5 +1,8 @@
 import React from "react";
-import Dragon from "../assets/Dragon-Ball-Logo.png";
+import Dragon from "../assets/dragonball-z.svg";
+import { Link } from "react-router-dom";
+
+
 const Navbar = () => {
   return (
     <nav class="navbar rounded-box shadow card-glass border-none text-neutral-content border-md ">
@@ -7,7 +10,7 @@ const Navbar = () => {
         <div class="flex items-center justify-between">
           <div class="navbar-start items-center justify-between max-md:w-full">
             <a href="#" aria-label="Homepage Link">
-              <img src={Dragon} className="w-[150px]"/>
+              <img src={Dragon} className="scale-[4]"/>
             </a>
             <div class="md:hidden">
               <button
@@ -32,7 +35,7 @@ const Navbar = () => {
               <a href="#" className="card-glass">Home</a>
             </li>
             <li>
-              <a href="#" >About</a>
+              <Link to={"esferas"} >About</Link>
             </li>
           </ul>
         </div>
