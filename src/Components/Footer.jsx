@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = ({namePage = "Dragon ball"}) => {
+const Footer = ({namePage = "Cesar Martinez"}) => {
   return (
     <footer class="footer bg-base-200/60 px-6 py-6 mt-12">
       <div class="flex w-full flex-wrap items-center justify-between">
