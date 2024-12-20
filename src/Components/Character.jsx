@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Footer from "./Footer";
 
 const Character = () => {
   const [data, setData] = useState(null);
@@ -22,15 +23,24 @@ const Character = () => {
   if (!data) return <h1>Cargando...</h1>;
 
   return (
-    <main className="w-screen h-screen flex flex-col items-center justify-center">
-      <div className="flex flex-col items-center justify-center p-4 h-screen w-3/5 bg-transparent">
-        <img src={data.image} alt="" className="object-cover h-fit w-96" />
-        <h1 className="font-bold text-6xl">{data.name}</h1>
-        <p>Planeta 🪐: {data.planet}</p>
+    <main className="h-screen ">
+      <div className="p-4 xl:p-10 h-lvh bg-transparent lg:p-7 md:p-10">
+        <figure class="max-w-lg">
+          <img
+            class="h-auto max-w-full rounded-lg"
+            src={data.image}
+            alt="image description"
+          />
+        </figure>
+
+        <h1 className="text-3xl font-bold mt-5">{data.name}</h1>
         <p>Genero: {data.genre}</p>
-        <p>Descripcion personaje 👨: {data.description}</p>
+        <p>Raza: {data.race}</p>
+        <p>{data.description}</p>
+        <p>{data.planet}</p>
         <p>{data.biography}</p>
       </div>
+      <Footer />  
     </main>
   );
 };

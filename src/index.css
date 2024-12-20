@@ -8,7 +8,7 @@
   font-family: consolas;
 }
 
-body {
+body,html{
   @apply bg-gradient-to-r from-zinc-900 to-slate-900
 }
 
