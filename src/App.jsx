@@ -6,8 +6,6 @@ import Esferas from "./Components/Esferas";
 
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Esferas></Esferas>

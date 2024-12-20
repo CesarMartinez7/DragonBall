@@ -1,0 +1,48 @@
+.esfera {
+  position: absolute;
+  width: 10vw; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+}
+
+.esfera5 {
+  width: 110px;
+  height: 100px;
+  left: 60%;
+  top: 30%;
+}
+
+.esfera6 {
+  width: 120px;
+  height: 120px;
+  left: 45%;
+  top: 70%;
+}
+
+.esfera7 {
+  width: 110px;
+  height: 100px;
+  left: 25%;
+  top: 75%;
+}
+
+.esfera4 {
+  width: 110px;
+  height: 100px;
+  left: 60%;
+  top: 65%;
+}
+
+.esfera1 {
+  left: 25%;
+  top: 40%;
+}
+
+.esfera2 {
+  left: 40%;
+  top: 20%;
+}
+
+.esfera3 {
+  left: 75%;
+  top: 50%;
+}

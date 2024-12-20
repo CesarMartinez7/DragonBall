@@ -14,6 +14,7 @@ body {
 
 .gris-filter{
   filter: grayscale(100%);
+  transition: 500ms filter;
 }
 
 .gris-filter:hover{
