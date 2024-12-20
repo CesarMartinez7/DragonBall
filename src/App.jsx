@@ -2,12 +2,15 @@ import { useState } from "react";
 import "./App.css";
 import Fetching from "./Components/Data";
 import Esferas from "./Components/Esferas";
+import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
+import { BrowserRouter, Routes,Route } from "react-router-dom";
+import Character from "./Components/Character";
 
-
-
-function App() {
+const Main = () => {
   return (
     <>
+      <Navbar />
       <Esferas></Esferas>
       <main className="w-full h-full flex flex-col items-center justify-center">
         <div className="w-full h-dvh flex flex-col items-center justify-center ">
@@ -24,7 +27,20 @@ function App() {
         </div>
       </main>
       <Fetching></Fetching>
+      <Footer />
     </>
+  );
+};
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/esferas" element={<Esferas />} />
+        <Route path="/characters/:id" element={<Character />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

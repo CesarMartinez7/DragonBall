@@ -16,7 +16,6 @@ const Esferas = () => {
       <img src={Esfera7} alt="" className="esfera-animation absolute esfera7" />
       <img
         src={Esfera4}
-        alt=""
         className="esfera-animation absolute esfera4"
       />
       <img

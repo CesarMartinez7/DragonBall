@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 const Fetching = () => {
-    const [data, setData] = useState(null);
+    const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://www.dragonballapi.com/dragonballz')
+        fetch('https://www.dragonballapi.com/dragonball')
             .then(response => response.json())
             .then(data => {
                 setData(data);
@@ -23,7 +23,7 @@ const Fetching = () => {
     }
 
     return (
-        <div className='grid grid-cols-1 gap-5 xl:grid-cols-5 w-full p-10 '>
+        <div className='grid grid-cols-2 gap-5 xl:grid-cols-5 w-full p-10 lg:grid-cols-4 md:grid-cols-3 '>
             {data.map((item,index)=>(
                 <div className='card p-8 card-glass gris-filter' key={index}>
                     <img src={item.image} alt={`Imagen de ${item.name}`}  className='aspect-auto m-2 hover:scale-110 duration-150'/>
@@ -31,6 +31,9 @@ const Fetching = () => {
                     <p className='text-white'>{item.race}</p>
                     <p className='text-white'>{`Planeta: ${item.planet}`}</p>
                     <p className='text-white'>{`Genero: ${item.genre}`}</p>
+                    <button className='text-left' onClick={()=>{
+                        window.location.href=`/characters/${item.id}`
+                    }} >Ver mas detalles </button> 
                 </div>
             ))}
 

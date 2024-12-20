@@ -7,8 +7,6 @@ import Footer from './Components/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Navbar />
     <App />
-    <Footer />
   </StrictMode>,
 )
