@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Footer from "./Footer";
-
+import Navbar from "./Navbar";
 const Character = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState(null);
@@ -23,8 +23,9 @@ const Character = () => {
   if (!data) return <h1>Cargando...</h1>;
 
   return (
-    <main className="h-screen ">
-      <div className="p-4 xl:p-10 h-lvh bg-transparent lg:p-7 md:p-10">
+    <main className="h-full flex flex-col ">
+      <Navbar />
+      <div className="p-4 xl:p-52 h-full bg-transparent lg:p-7 md:p-10 flex flex-col items-center justify-center">
         <figure class="max-w-lg">
           <img
             class="h-auto max-w-full rounded-lg"
@@ -32,13 +33,12 @@ const Character = () => {
             alt="image description"
           />
         </figure>
-
         <h1 className="text-3xl font-bold mt-5">{data.name}</h1>
-        <p>Genero: {data.genre}</p>
-        <p>Raza: {data.race}</p>
+        <p>Genero 👥: {data.genre}</p>
+        <p>Planeta 🪐:{data.planet}</p>
+        <p>Raza : {data.race}</p>
         <p>{data.description}</p>
-        <p>{data.planet}</p>
-        <p>{data.biography}</p>
+        <p className="text-justify">{data.biography}</p>
       </div>
       <Footer />  
     </main>
