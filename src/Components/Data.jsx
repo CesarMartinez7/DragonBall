@@ -23,7 +23,7 @@ const Fetching = () => {
     }
 
     return (
-        <div className='grid grid-cols-2 gap-5 xl:grid-cols-5 w-full p-10 lg:grid-cols-4 md:grid-cols-3 '>
+        <div className='grid grid-cols-1 gap-5 xl:grid-cols-5 w-full p-10 lg:grid-cols-4 md:grid-cols-3 '>
             {data.map((item,index)=>(
                 <div className='card p-8 card-glass gris-filter' key={index}>
                     <img src={item.image} alt={`Imagen de ${item.name}`}  className='aspect-auto m-2 hover:scale-110 duration-150'/>
