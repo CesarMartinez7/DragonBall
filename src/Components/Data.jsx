@@ -31,9 +31,10 @@ const Fetching = () => {
                     <p className='text-white'>{item.race}</p>
                     <p className='text-white'>{`Planeta: ${item.planet}`}</p>
                     <p className='text-white'>{`Genero: ${item.genre}`}</p>
-                    <button className='text-left' onClick={()=>{
-                        window.location.href=`/characters/${item.id}`
-                    }} >Ver mas detalles </button> 
+                    <a className='text-left' href={`/characters/${item.id}`} onClick={()=>{
+                        // window.location.href=`/characters/${item.id}`
+                        console.log(item.id)
+                    }} >Ver mas detalles </a> 
                 </div>
             ))}
 

@@ -5,13 +5,13 @@ const Character = () => {
   const [data, setData] = useState(null);
 
   let { id } = useParams();
-  console.log(id);
 
   useEffect(() => {
     fetch(`https://www.dragonballapi.com/dragonball/${id}`)
       .then((response) => response.json())
       .then((dataa) => setData(dataa));
-  }, []);
+      console.log(id)
+  }, [id]);
 
   if (!data) return <h1>Cargando...</h1>;
   return (
