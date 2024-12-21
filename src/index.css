@@ -3,13 +3,35 @@
 @tailwind utilities;
 
 
-
-:root{
-  font-family: consolas;
+:root {
+  font-family: 'Consolas', monospace;
 }
 
-body,html{
-  @apply bg-gradient-to-r from-zinc-900 to-slate-900
+.drop-box {
+  filter: drop-shadow(0 0 10px #ffffff25);
+}
+
+body, html {
+  @apply bg-gradient-to-r from-zinc-900 to-slate-900;
+}
+
+.gris {
+  filter: grayscale(100%) contrast(1.5) brightness(0.8);
+  transition: filter 500ms;
+  z-index: 0;
+}
+
+.gris:hover {
+  filter: grayscale(0%);
+}
+
+.shenlong {
+  transition: filter 500ms, transform 500ms;
+}
+
+.shenlong:hover {
+  filter: hue-rotate(90deg);
+  transform: scale(1.1);
 }
 
 .gris-filter{
@@ -46,7 +68,7 @@ body,html{
   animation-name: text-animated;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  filter: grayscale(70%) ;
+  filter: grayscale(0%) ;
   transition: filter 500ms ease;
 }
 

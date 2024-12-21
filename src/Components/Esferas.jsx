@@ -11,46 +11,13 @@ import "./Esferas.css";
 const Esferas = () => {
   return (
     <>
-      <img src={Esfera5} alt="" className="esfera-animation absolute esfera5" />
-      <img src={Esfera6} alt="" className="esfera-animation absolute esfera6"/>
-      <img src={Esfera7} alt="" className="esfera-animation absolute esfera7" />
-      <img
-        src={Esfera4}
-        className="esfera-animation absolute esfera4"
-      />
-      <img
-        src={Esfera1}
-        className="esfera-animation absolute esfera1"
-        style={{
-          left: "404px",
-          top: "392px",
-          width: "103px",
-          cursor: "move",
-        }}
-      />
-      <img
-        src={Esfera2}
-        alt=""
-        className="esfera-animation absolute"
-        style={{
-          left: "808px",
-          top: "249px",
-          width: "101px",
-          cursor: "move",
-        }}
-      />
-      <img
-        src={Esfera3}
-        alt=""
-        className="esfera-animation absolute"
-        style={{
-          left: "1438px",
-          top: "420px",
-          width: "120px",
-          cursor: "move",
-          transform: " translate(0px, -17.6742px)",
-        }}
-      />
+      <img src={Esfera5} className="esfera esfera-animation absolute esfera5" />
+      <img src={Esfera6} className="esfera esfera-animation absolute esfera6" />
+      <img src={Esfera7} className="esfera esfera-animation absolute esfera7" />
+      <img src={Esfera4} className="esfera esfera-animation absolute esfera4" />
+      <img src={Esfera1} className="esfera esfera-animation absolute esfera1"/>
+      <img src={Esfera2} className="esfera esfera-animation absolute esfera2"/>
+      <img src={Esfera3} className="esfera esfera-animation absolute esfera3" />
     </>
   );
 };

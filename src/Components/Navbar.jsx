@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav class="navbar rounded-box shadow card-glass border-none text-neutral-content border-md ">
+    <nav class="navbar rounded-box shadow card-glass border-none text-neutral-content border-md z-50">
       <div class="w-full md:flex md:items-center md:gap-2">
         <div class="flex items-center justify-between">
           <div class="navbar-start items-center justify-between max-md:w-full">
