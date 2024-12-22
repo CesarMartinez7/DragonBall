@@ -49,7 +49,7 @@ const Fetching = ({ casting = "dragonball" }) => {
       <div className="flex justify-center items-center">
         <img src={logoFinal} className="drop-box w-96" />
       </div>
-      <div className="grid grid-cols-1 gap-5 xl:grid-cols-5 w-full p-10 lg:grid-cols-4 md:grid-cols-3 ">
+      <div className="grid grid-cols-1 gap-5 xl:grid-cols-5 w-full p-6 lg:grid-cols-4 md:grid-cols-3 ">
         {data.map((item, index) => (
           <a href={`/characters/${casting}/${item.id}`} className="card p-8 card-glass gris-filter" key={index} onClick={() => {
             // window.location.href=`/characters/${item.id}`
@@ -68,7 +68,6 @@ const Fetching = ({ casting = "dragonball" }) => {
               className="text-left"
               href={`/characters/${casting}/${item.id}`}
               onClick={() => {
-                // window.location.href=`/characters/${item.id}`
                 console.log(item.id);
               }}
             >

@@ -11,13 +11,13 @@ import "./Esferas.css";
 const Esferas = () => {
   return (
     <>
-      <img src={Esfera5} className="esfera esfera-animation absolute esfera5" />
-      <img src={Esfera6} className="esfera esfera-animation absolute esfera6" />
-      <img src={Esfera7} className="esfera esfera-animation absolute esfera7" />
-      <img src={Esfera4} className="esfera esfera-animation absolute esfera4" />
-      <img src={Esfera1} className="esfera esfera-animation absolute esfera1"/>
-      <img src={Esfera2} className="esfera esfera-animation absolute esfera2"/>
-      <img src={Esfera3} className="esfera esfera-animation absolute esfera3" />
+      <img src={Esfera5} className="hidden md:block esfera esfera-animation absolute esfera5" />
+      <img src={Esfera6} className="hidden md:block esfera esfera-animation absolute esfera6" />
+      <img src={Esfera7} className="hidden md:block esfera esfera-animation absolute esfera7" />
+      <img src={Esfera4} className="hidden md:block esfera esfera-animation absolute esfera4" />
+      <img src={Esfera1} className="hidden md:block esfera esfera-animation absolute esfera1"/>
+      <img src={Esfera2} className="hidden md:block esfera esfera-animation absolute esfera2"/>
+      <img src={Esfera3} className="hidden md:block esfera esfera-animation absolute esfera3" />
     </>
   );
 };
