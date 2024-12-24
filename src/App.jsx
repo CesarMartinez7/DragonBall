@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Character from "./Components/Character";
+import dragonball from "./assets/dragonballz.png"
 
 const Main = () => {
   return (
@@ -14,9 +15,9 @@ const Main = () => {
       <Esferas />
       <main className="w-full h-full flex flex-col items-center justify-center">
         <div className="w-full h-dvh flex flex-col items-center justify-center ">
-          <h1 className="font-bold text-5xl xl:text-7xl p-5 z-50 text-white text-center">
-            Dragon Ball Sagas
-          </h1>
+          <div>
+            <img src={dragonball}  />
+          </div>
           <p className="text-center plt z-10 text-sm xl:w-4/6 text-white">
             Dragon Ball es una serie de manga y anime creada por Akira Toriyama.
             La historia sigue las aventuras de Goku, un guerrero Saiyan,
