@@ -1,5 +1,4 @@
 import { useState } from "react";
-import "./App.css";
 import Fetching from "./Components/Data";
 import Esferas from "./Components/Esferas";
 import Navbar from "./Components/Navbar";
