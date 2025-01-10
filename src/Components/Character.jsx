@@ -32,8 +32,8 @@ const Character = () => {
   return (
     <main className="min-h-screen flex flex-col justify-center items-center bg-gray-900 text-white">
       <Navbar />
-      <div className="p-4 xl:p-24 h-full bg-transparent lg:p-7 md:p-10 flex flex-col items-center justify-center xl:w-2/4">
-        <h2 className="font-bold text-6xl text-white mb-6">{data.name}</h2>
+      <div className="p-4 xl:p-24 h-full bg-transparent lg:p-7 md:p-10 flex flex-col bg-slate-900 rounded-2xl items-center justify-center xl:w-2/4">
+        <h2 className="font-bold text-6xl mb-6">{data.name}</h2>
         <figure className="max-w-lg mb-6">
           <img
             src={data.image}
@@ -49,14 +49,14 @@ const Character = () => {
             <span className="font-semibold  bg-gray-800 p-2 rounded-lg shadow-md">Genero:</span> {data.genre}
           </p>
           <p className="w-full text-lg text-justify">
-            <span className="font-semibold ">Descripcion personaje 👨:</span> {data.description}
+            <span className="font-semibold ">Descripcion personaje :</span> {data.description}
           </p>
-          <p className=" w-full text-lg text-justify">{data.biography}</p>
+          <p className=" w-full text-lg text-justify text-wrap font-light">{data?.biography}</p>
           <h3 className="font-light text-2xl mt-4 text-left w-full">Transformaciones</h3>
           <div className="w-full flex flex-wrap gap-2 mt-2">
             {data.transformations.map((transformacion, index) => (
               <h3 key={index} className="bg-gray-800 p-2 rounded-lg shadow-md">
-                {transformacion.title}
+                {transformacion?.title}
               </h3>
             ))}
           </div>
