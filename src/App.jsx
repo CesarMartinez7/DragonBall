@@ -1,6 +1,4 @@
-import { useState } from "react";
 import Fetching from "./Components/Data";
-import Esferas from "./Components/Esferas";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -11,13 +9,12 @@ const Main = () => {
   return (
     <>
       <Navbar />
-      <Esferas />
       <main className="w-full h-full flex flex-col items-center justify-center">
         <div className="w-full h-dvh flex flex-col items-center justify-center ">
           <div>
             <img src={dragonball}  />
           </div>
-          <p className="text-center plt z-10 text-sm xl:w-4/6 text-white">
+          <p className="text-center plt z-10 text-sm xl:w-2/4 text-pretty ">
             Dragon Ball es una serie de manga y anime creada por Akira Toriyama.
             La historia sigue las aventuras de Goku, un guerrero Saiyan,
             mientras busca las Esferas del Dragón, que pueden conceder cualquier
@@ -31,7 +28,6 @@ const Main = () => {
       <Fetching casting="dragonballgt" />
       <Fetching casting="dragonballsuper" />
       <Fetching casting="dragons" />
-      <Footer />
     </>
   );
 };
@@ -41,9 +37,9 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/esferas" element={<Esferas />} />
         <Route path="/characters/:saga/:id" element={<Character />} />
       </Routes>
+<Footer />
     </BrowserRouter>
   );
 }

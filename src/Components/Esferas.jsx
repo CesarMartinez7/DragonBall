@@ -1,4 +1,5 @@
-import React from "react";
+
+
 import Esfera1 from "../assets/esfera1.png";
 import Esfera2 from "../assets/esfera2.png";
 import Esfera3 from "../assets/esfera3.png";

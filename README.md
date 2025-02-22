@@ -1,9 +1,33 @@
-# React + Vite
+# 🐲 Dragon Ball Wiki 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido! Este es un proyecto sencillo desarrollado con React que presenta información sobre los personajes de la serie Dragon Ball. 
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# DragonballPage
+Esta aplicación web permite a los usuarios explorar y conocer detalles sobre diversos personajes del universo de Dragon Ball. Cada personaje incluye información como su nombre, raza, habilidades y una breve descripción.
+
+### Características
+
+- Listado de personajes: Visualiza una lista de personajes con sus nombres y una imagen representativa.
+- Detalle de personajes: Al seleccionar un personaje, se muestra información detallada sobre él.
+- Búsqueda: Funcionalidad para buscar personajes por nombre.
+
+# 🚀 Tecnologías utilizadas
+
+- __ReactJS__
+
+- __React Router__
+- __ViteJS__
+- __Fetch Native__
+- __Tailwindcss__
+
+
+### Contribución
+
+Si deseas contribuir a este proyecto:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama (git checkout -b feature/nueva-funcionalidad).
+3. Realiza tus cambios y haz commit (git commit -m 'Agrega nueva funcionalidad').
+4. Sube tus cambios (git push origin feature/nueva-funcionalidad).
+5. Abre un Pull Request.
